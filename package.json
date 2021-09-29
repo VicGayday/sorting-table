@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "frontend": "cd client && yarn start",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "migrate": "node-pg-migrate",
     "seed": "node seed/seed.points.js",
-    "heroku-postbuild": "yarn run start"
+    "heroku-postbuild": "yarn run start && yarn run frontend"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

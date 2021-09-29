@@ -8,4 +8,8 @@ router.get('/:id', pointsController.getOnePoint)
 router.put('/', pointsController.updatePoint)
 router.delete('/:id', pointsController.deletePoint)
 
+router.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "../client/public/index.html"));
+});
+
 module.exports = router
