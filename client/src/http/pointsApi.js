@@ -3,8 +3,7 @@ import { $host } from './index.js'
 export const newPoint = async (points) => {
 
   const { data } = await $host.post('/api', points)
-  console.log('data-', data);
-  return data
+    return data
 }
 
 export const fetchPoints = async () => {

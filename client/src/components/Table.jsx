@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import '../styles/App.css';
 
 const Table = ({ tableCells, currentPage }) => {
-  const [cellsPerPage] = useState(process.env.REACT_APP_CELLS_PER_PAGE)
+  const [cellsPerPage] = useState(10)
 
   return (
     <div className="wrapper">
-      <h1>Список автомобилей с пробегом</h1>
+      <h1>Список данных</h1>
       <div className="table">
         <div className="row">
           <div className="box">NN</div>
