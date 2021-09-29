@@ -9,7 +9,7 @@
     "dev": "nodemon index.js",
     "migrate": "node-pg-migrate",
     "seed": "node seed/seed.points.js",
-    "heroku-postbuild": "cd client && yarn install && yarn start"
+    "heroku-postbuild": "cd client && yarn install && yarn build"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
