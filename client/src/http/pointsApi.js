@@ -10,6 +10,5 @@ export const newPoint = async (points) => {
 export const fetchPoints = async () => {
 
   const { data } = await $host.get('/api')
-  // console.log('data-', date);
-  return data
+    return data
 }

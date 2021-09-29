@@ -8,13 +8,11 @@ const Pagination = ({ cellsPerPage, totalCells, currentPage, setCurrentPage }) =
       return index + 1
     })
 
-  {
     if (currentPage > Math.ceil(totalCells / cellsPerPage)) {
       setCurrentPage(1)
     }
-  }
-  console.log('ge-', pageNumbers, Math.ceil(totalCells / cellsPerPage));
-  console.log('Page-', cellsPerPage, totalCells, currentPage);
+
+
   return (
     <div className="pagination__wrap">
       {pageNumbers.map((it) => (

@@ -22,7 +22,7 @@ function App() {
     console.log('fil-', filter.sort, filter.condition, filter.query);
     switch (filter.condition) {
       case ("equals"):
-        return [...sortedCells].filter(item => item[filter.sort] == filter.query)
+        return [...sortedCells].filter(item => item[filter.sort] == filter.query)   //использование нечеткого равенста для приведения типов
       case ("contains"):
         return [...sortedCells].filter(item => item[filter.sort].includes(filter.query))
       case ("more"):

@@ -13,8 +13,7 @@ const InputForm = ({ create }) => {
     newPoint(newCell).then(data => setNewCell(data))
     console.log('points-', newCell);
 
-    create(newCell)    // выводит таблицу + добавленная строка
-    // setTableCells([...tableCells, { ...newCells, id: Date.now() }]);
+    create(newCell)
     setNewCell({ date: "", title: "", quantity: "", distance: "" })
 
   }

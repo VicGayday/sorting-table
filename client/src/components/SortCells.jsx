@@ -7,7 +7,7 @@ const SortCells = ({ filter, setFilter }) => {
     <div>
       <MySelect
         disabled={false}
-        value={filter.sort}    // sort
+        value={filter.sort}
         onChange={(item) => setFilter({ ...filter, sort: item, condition: '', query: '' })}
         defaultValue="Выбор колонки"
         options={[
@@ -20,7 +20,7 @@ const SortCells = ({ filter, setFilter }) => {
       {filter.sort === "title"
         ? <MySelect
           disabled={false}
-          value={filter.condition}          // condition
+          value={filter.condition}
           onChange={(item) => setFilter({ ...filter, condition: item })}
           defaultValue="Выбор условия"
           options={[
@@ -33,7 +33,7 @@ const SortCells = ({ filter, setFilter }) => {
         />
         : <MySelect
           disabled={false}
-          value={filter.condition}          // condition
+          value={filter.condition}
           onChange={(item) => setFilter({ ...filter, condition: item })}
           defaultValue="Выбор условия"
           options={[
@@ -45,14 +45,12 @@ const SortCells = ({ filter, setFilter }) => {
           ]}
         />
       }
-      <MyInput                // query
-        // disabled={false}
+      <MyInput
         value={filter.query}
         onChange={(e) => setFilter({ ...filter, query: e.target.value })}
         placeholder="Введите критерий для выбора"
       />
-      {/* <MyButton onClick={setFilter({ ...filter, condition: '' })}>Очистить</MyButton> */}
-    </div>
+      </div>
   )
 }
 
