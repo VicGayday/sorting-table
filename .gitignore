@@ -1,0 +1,12 @@
+.idea
+/client/node_modules
+/client/yarn.lock
+
+/server/node_modules
+/server/yarn.lock
+
+document.txt
+
+/coverage
+/_build
+.env
